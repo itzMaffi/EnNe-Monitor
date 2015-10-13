@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8223A5D11BCD36250007C308 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8223A5D01BCD36250007C308 /* main.m */; };
+		8223A5D41BCD36250007C308 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8223A5D31BCD36250007C308 /* AppDelegate.m */; };
+		8223A5D71BCD36250007C308 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8223A5D61BCD36250007C308 /* ViewController.m */; };
+		8223A5DA1BCD36250007C308 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8223A5D81BCD36250007C308 /* Main.storyboard */; };
+		8223A5DC1BCD36250007C308 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8223A5DB1BCD36250007C308 /* Assets.xcassets */; };
+		8223A5DF1BCD36250007C308 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8223A5DD1BCD36250007C308 /* LaunchScreen.storyboard */; };
+		8223A5EA1BCD36260007C308 /* EnNeMonitorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8223A5E91BCD36260007C308 /* EnNeMonitorTests.m */; };
+		8223A5F51BCD36260007C308 /* EnNeMonitorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8223A5F41BCD36260007C308 /* EnNeMonitorUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8223A5E61BCD36260007C308 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8223A5C41BCD36250007C308 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8223A5CB1BCD36250007C308;
+			remoteInfo = EnNeMonitor;
+		};
+		8223A5F11BCD36260007C308 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8223A5C41BCD36250007C308 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8223A5CB1BCD36250007C308;
+			remoteInfo = EnNeMonitor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8223A5CC1BCD36250007C308 /* EnNeMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnNeMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8223A5D01BCD36250007C308 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8223A5D21BCD36250007C308 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8223A5D31BCD36250007C308 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8223A5D51BCD36250007C308 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8223A5D61BCD36250007C308 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8223A5D91BCD36250007C308 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8223A5DB1BCD36250007C308 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8223A5DE1BCD36250007C308 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8223A5E01BCD36250007C308 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8223A5E51BCD36260007C308 /* EnNeMonitorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnNeMonitorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8223A5E91BCD36260007C308 /* EnNeMonitorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EnNeMonitorTests.m; sourceTree = "<group>"; };
+		8223A5EB1BCD36260007C308 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8223A5F01BCD36260007C308 /* EnNeMonitorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnNeMonitorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8223A5F41BCD36260007C308 /* EnNeMonitorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EnNeMonitorUITests.m; sourceTree = "<group>"; };
+		8223A5F61BCD36260007C308 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8223A5C91BCD36250007C308 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8223A5E21BCD36260007C308 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8223A5ED1BCD36260007C308 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8223A5C31BCD36250007C308 = {
+			isa = PBXGroup;
+			children = (
+				8223A5CE1BCD36250007C308 /* EnNeMonitor */,
+				8223A5E81BCD36260007C308 /* EnNeMonitorTests */,
+				8223A5F31BCD36260007C308 /* EnNeMonitorUITests */,
+				8223A5CD1BCD36250007C308 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8223A5CD1BCD36250007C308 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8223A5CC1BCD36250007C308 /* EnNeMonitor.app */,
+				8223A5E51BCD36260007C308 /* EnNeMonitorTests.xctest */,
+				8223A5F01BCD36260007C308 /* EnNeMonitorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8223A5CE1BCD36250007C308 /* EnNeMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				8223A5D21BCD36250007C308 /* AppDelegate.h */,
+				8223A5D31BCD36250007C308 /* AppDelegate.m */,
+				8223A5D51BCD36250007C308 /* ViewController.h */,
+				8223A5D61BCD36250007C308 /* ViewController.m */,
+				8223A5D81BCD36250007C308 /* Main.storyboard */,
+				8223A5DB1BCD36250007C308 /* Assets.xcassets */,
+				8223A5DD1BCD36250007C308 /* LaunchScreen.storyboard */,
+				8223A5E01BCD36250007C308 /* Info.plist */,
+				8223A5CF1BCD36250007C308 /* Supporting Files */,
+			);
+			path = EnNeMonitor;
+			sourceTree = "<group>";
+		};
+		8223A5CF1BCD36250007C308 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8223A5D01BCD36250007C308 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8223A5E81BCD36260007C308 /* EnNeMonitorTests */ = {
+			isa = PBXGroup;
+			children = (
+				8223A5E91BCD36260007C308 /* EnNeMonitorTests.m */,
+				8223A5EB1BCD36260007C308 /* Info.plist */,
+			);
+			path = EnNeMonitorTests;
+			sourceTree = "<group>";
+		};
+		8223A5F31BCD36260007C308 /* EnNeMonitorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8223A5F41BCD36260007C308 /* EnNeMonitorUITests.m */,
+				8223A5F61BCD36260007C308 /* Info.plist */,
+			);
+			path = EnNeMonitorUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8223A5CB1BCD36250007C308 /* EnNeMonitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8223A5F91BCD36260007C308 /* Build configuration list for PBXNativeTarget "EnNeMonitor" */;
+			buildPhases = (
+				8223A5C81BCD36250007C308 /* Sources */,
+				8223A5C91BCD36250007C308 /* Frameworks */,
+				8223A5CA1BCD36250007C308 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EnNeMonitor;
+			productName = EnNeMonitor;
+			productReference = 8223A5CC1BCD36250007C308 /* EnNeMonitor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8223A5E41BCD36260007C308 /* EnNeMonitorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8223A5FC1BCD36260007C308 /* Build configuration list for PBXNativeTarget "EnNeMonitorTests" */;
+			buildPhases = (
+				8223A5E11BCD36260007C308 /* Sources */,
+				8223A5E21BCD36260007C308 /* Frameworks */,
+				8223A5E31BCD36260007C308 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8223A5E71BCD36260007C308 /* PBXTargetDependency */,
+			);
+			name = EnNeMonitorTests;
+			productName = EnNeMonitorTests;
+			productReference = 8223A5E51BCD36260007C308 /* EnNeMonitorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8223A5EF1BCD36260007C308 /* EnNeMonitorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8223A5FF1BCD36260007C308 /* Build configuration list for PBXNativeTarget "EnNeMonitorUITests" */;
+			buildPhases = (
+				8223A5EC1BCD36260007C308 /* Sources */,
+				8223A5ED1BCD36260007C308 /* Frameworks */,
+				8223A5EE1BCD36260007C308 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8223A5F21BCD36260007C308 /* PBXTargetDependency */,
+			);
+			name = EnNeMonitorUITests;
+			productName = EnNeMonitorUITests;
+			productReference = 8223A5F01BCD36260007C308 /* EnNeMonitorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8223A5C41BCD36250007C308 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Michele Maffei";
+				TargetAttributes = {
+					8223A5CB1BCD36250007C308 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					8223A5E41BCD36260007C308 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 8223A5CB1BCD36250007C308;
+					};
+					8223A5EF1BCD36260007C308 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 8223A5CB1BCD36250007C308;
+					};
+				};
+			};
+			buildConfigurationList = 8223A5C71BCD36250007C308 /* Build configuration list for PBXProject "EnNeMonitor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8223A5C31BCD36250007C308;
+			productRefGroup = 8223A5CD1BCD36250007C308 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8223A5CB1BCD36250007C308 /* EnNeMonitor */,
+				8223A5E41BCD36260007C308 /* EnNeMonitorTests */,
+				8223A5EF1BCD36260007C308 /* EnNeMonitorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8223A5CA1BCD36250007C308 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8223A5DF1BCD36250007C308 /* LaunchScreen.storyboard in Resources */,
+				8223A5DC1BCD36250007C308 /* Assets.xcassets in Resources */,
+				8223A5DA1BCD36250007C308 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8223A5E31BCD36260007C308 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8223A5EE1BCD36260007C308 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8223A5C81BCD36250007C308 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8223A5D71BCD36250007C308 /* ViewController.m in Sources */,
+				8223A5D41BCD36250007C308 /* AppDelegate.m in Sources */,
+				8223A5D11BCD36250007C308 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8223A5E11BCD36260007C308 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8223A5EA1BCD36260007C308 /* EnNeMonitorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8223A5EC1BCD36260007C308 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8223A5F51BCD36260007C308 /* EnNeMonitorUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8223A5E71BCD36260007C308 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8223A5CB1BCD36250007C308 /* EnNeMonitor */;
+			targetProxy = 8223A5E61BCD36260007C308 /* PBXContainerItemProxy */;
+		};
+		8223A5F21BCD36260007C308 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8223A5CB1BCD36250007C308 /* EnNeMonitor */;
+			targetProxy = 8223A5F11BCD36260007C308 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8223A5D81BCD36250007C308 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8223A5D91BCD36250007C308 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8223A5DD1BCD36250007C308 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8223A5DE1BCD36250007C308 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8223A5F71BCD36260007C308 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8223A5F81BCD36260007C308 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8223A5FA1BCD36260007C308 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = EnNeMonitor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.private.ios.EnNeMonitor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8223A5FB1BCD36260007C308 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = EnNeMonitor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.private.ios.EnNeMonitor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8223A5FD1BCD36260007C308 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = EnNeMonitorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.private.ios.EnNeMonitorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EnNeMonitor.app/EnNeMonitor";
+			};
+			name = Debug;
+		};
+		8223A5FE1BCD36260007C308 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = EnNeMonitorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.private.ios.EnNeMonitorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EnNeMonitor.app/EnNeMonitor";
+			};
+			name = Release;
+		};
+		8223A6001BCD36260007C308 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = EnNeMonitorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.private.ios.EnNeMonitorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = EnNeMonitor;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		8223A6011BCD36260007C308 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = EnNeMonitorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.private.ios.EnNeMonitorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = EnNeMonitor;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8223A5C71BCD36250007C308 /* Build configuration list for PBXProject "EnNeMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8223A5F71BCD36260007C308 /* Debug */,
+				8223A5F81BCD36260007C308 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8223A5F91BCD36260007C308 /* Build configuration list for PBXNativeTarget "EnNeMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8223A5FA1BCD36260007C308 /* Debug */,
+				8223A5FB1BCD36260007C308 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8223A5FC1BCD36260007C308 /* Build configuration list for PBXNativeTarget "EnNeMonitorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8223A5FD1BCD36260007C308 /* Debug */,
+				8223A5FE1BCD36260007C308 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8223A5FF1BCD36260007C308 /* Build configuration list for PBXNativeTarget "EnNeMonitorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8223A6001BCD36260007C308 /* Debug */,
+				8223A6011BCD36260007C308 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8223A5C41BCD36250007C308 /* Project object */;
+}
