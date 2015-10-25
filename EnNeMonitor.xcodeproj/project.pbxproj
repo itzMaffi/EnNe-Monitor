@@ -7,14 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		820A02D51BCEA56300B89D19 /* ENMNetworkInfoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 820A02D41BCEA56300B89D19 /* ENMNetworkInfoManager.m */; settings = {ASSET_TAGS = (); }; };
 		8223A5D11BCD36250007C308 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8223A5D01BCD36250007C308 /* main.m */; };
 		8223A5D41BCD36250007C308 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8223A5D31BCD36250007C308 /* AppDelegate.m */; };
-		8223A5D71BCD36250007C308 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8223A5D61BCD36250007C308 /* ViewController.m */; };
 		8223A5DA1BCD36250007C308 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8223A5D81BCD36250007C308 /* Main.storyboard */; };
 		8223A5DC1BCD36250007C308 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8223A5DB1BCD36250007C308 /* Assets.xcassets */; };
-		8223A5DF1BCD36250007C308 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8223A5DD1BCD36250007C308 /* LaunchScreen.storyboard */; };
 		8223A5EA1BCD36260007C308 /* EnNeMonitorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8223A5E91BCD36260007C308 /* EnNeMonitorTests.m */; };
 		8223A5F51BCD36260007C308 /* EnNeMonitorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8223A5F41BCD36260007C308 /* EnNeMonitorUITests.m */; };
+		8223A6041BCD36B30007C308 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8223A6031BCD36B30007C308 /* MainViewController.m */; settings = {ASSET_TAGS = (); }; };
+		8223A6071BCD38240007C308 /* ENMBatteryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8223A6061BCD38240007C308 /* ENMBatteryManager.m */; settings = {ASSET_TAGS = (); }; };
+		8223A6091BCD385D0007C308 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8223A6081BCD385D0007C308 /* IOKit.framework */; };
+		82897CC11BD534E600F950B8 /* ENMNetworkStatisticsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 82897CC01BD534E600F950B8 /* ENMNetworkStatisticsManager.m */; settings = {ASSET_TAGS = (); }; };
+		829221601BCD3B11004D8DC8 /* ContentTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8292215F1BCD3B11004D8DC8 /* ContentTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		82A9E8AA1BCE86CE008CAF17 /* ENMHardwareManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A9E8A91BCE86CE008CAF17 /* ENMHardwareManager.m */; settings = {ASSET_TAGS = (); }; };
+		82C2E0751BDD2241000D27D2 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82C2E0741BDD2241000D27D2 /* Launch Screen.storyboard */; settings = {ASSET_TAGS = (); }; };
+		82F098861BCFF72000352919 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F098851BCFF72000352919 /* Reachability.m */; settings = {ASSET_TAGS = (); }; };
+		82F098891BCFF77400352919 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F098881BCFF77400352919 /* CoreTelephony.framework */; };
+		82F0988B1BCFFCB400352919 /* MobileWiFi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F0988A1BCFFCB400352919 /* MobileWiFi.framework */; };
+		82F0988F1BD006B000352919 /* EnNeMonitor.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 82F0988E1BD006B000352919 /* EnNeMonitor.entitlements */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,15 +45,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		820A02D31BCEA56300B89D19 /* ENMNetworkInfoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENMNetworkInfoManager.h; sourceTree = "<group>"; };
+		820A02D41BCEA56300B89D19 /* ENMNetworkInfoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENMNetworkInfoManager.m; sourceTree = "<group>"; };
 		8223A5CC1BCD36250007C308 /* EnNeMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnNeMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8223A5D01BCD36250007C308 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8223A5D21BCD36250007C308 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8223A5D31BCD36250007C308 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8223A5D51BCD36250007C308 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8223A5D61BCD36250007C308 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8223A5D91BCD36250007C308 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8223A5DB1BCD36250007C308 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8223A5DE1BCD36250007C308 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8223A5E01BCD36250007C308 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8223A5E51BCD36260007C308 /* EnNeMonitorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnNeMonitorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8223A5E91BCD36260007C308 /* EnNeMonitorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EnNeMonitorTests.m; sourceTree = "<group>"; };
@@ -51,6 +60,23 @@
 		8223A5F01BCD36260007C308 /* EnNeMonitorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnNeMonitorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8223A5F41BCD36260007C308 /* EnNeMonitorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EnNeMonitorUITests.m; sourceTree = "<group>"; };
 		8223A5F61BCD36260007C308 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8223A6021BCD36B30007C308 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = ../MainViewController.h; sourceTree = "<group>"; };
+		8223A6031BCD36B30007C308 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = ../MainViewController.m; sourceTree = "<group>"; };
+		8223A6051BCD38240007C308 /* ENMBatteryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENMBatteryManager.h; sourceTree = "<group>"; };
+		8223A6061BCD38240007C308 /* ENMBatteryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENMBatteryManager.m; sourceTree = "<group>"; };
+		8223A6081BCD385D0007C308 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		82897CBF1BD534E600F950B8 /* ENMNetworkStatisticsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENMNetworkStatisticsManager.h; sourceTree = "<group>"; };
+		82897CC01BD534E600F950B8 /* ENMNetworkStatisticsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENMNetworkStatisticsManager.m; sourceTree = "<group>"; };
+		8292215E1BCD3B11004D8DC8 /* ContentTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentTableViewController.h; sourceTree = "<group>"; };
+		8292215F1BCD3B11004D8DC8 /* ContentTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentTableViewController.m; sourceTree = "<group>"; };
+		82A9E8A81BCE86CE008CAF17 /* ENMHardwareManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENMHardwareManager.h; sourceTree = "<group>"; };
+		82A9E8A91BCE86CE008CAF17 /* ENMHardwareManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENMHardwareManager.m; sourceTree = "<group>"; };
+		82C2E0741BDD2241000D27D2 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		82F098841BCFF72000352919 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		82F098851BCFF72000352919 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		82F098881BCFF77400352919 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		82F0988A1BCFFCB400352919 /* MobileWiFi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileWiFi.framework; path = System/Library/PrivateFrameworks/MobileWiFi.framework; sourceTree = SDKROOT; };
+		82F0988E1BD006B000352919 /* EnNeMonitor.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = EnNeMonitor.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +84,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82F0988B1BCFFCB400352919 /* MobileWiFi.framework in Frameworks */,
+				82F098891BCFF77400352919 /* CoreTelephony.framework in Frameworks */,
+				8223A6091BCD385D0007C308 /* IOKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +110,10 @@
 		8223A5C31BCD36250007C308 = {
 			isa = PBXGroup;
 			children = (
+				82F0988E1BD006B000352919 /* EnNeMonitor.entitlements */,
+				82F0988A1BCFFCB400352919 /* MobileWiFi.framework */,
+				82F098881BCFF77400352919 /* CoreTelephony.framework */,
+				8223A6081BCD385D0007C308 /* IOKit.framework */,
 				8223A5CE1BCD36250007C308 /* EnNeMonitor */,
 				8223A5E81BCD36260007C308 /* EnNeMonitorTests */,
 				8223A5F31BCD36260007C308 /* EnNeMonitorUITests */,
@@ -101,13 +134,17 @@
 		8223A5CE1BCD36250007C308 /* EnNeMonitor */ = {
 			isa = PBXGroup;
 			children = (
+				82897CC21BD534F600F950B8 /* Managers */,
+				82F098871BCFF72800352919 /* Reachability */,
 				8223A5D21BCD36250007C308 /* AppDelegate.h */,
 				8223A5D31BCD36250007C308 /* AppDelegate.m */,
-				8223A5D51BCD36250007C308 /* ViewController.h */,
-				8223A5D61BCD36250007C308 /* ViewController.m */,
+				8223A6021BCD36B30007C308 /* MainViewController.h */,
+				8223A6031BCD36B30007C308 /* MainViewController.m */,
 				8223A5D81BCD36250007C308 /* Main.storyboard */,
+				8292215E1BCD3B11004D8DC8 /* ContentTableViewController.h */,
+				8292215F1BCD3B11004D8DC8 /* ContentTableViewController.m */,
 				8223A5DB1BCD36250007C308 /* Assets.xcassets */,
-				8223A5DD1BCD36250007C308 /* LaunchScreen.storyboard */,
+				82C2E0741BDD2241000D27D2 /* Launch Screen.storyboard */,
 				8223A5E01BCD36250007C308 /* Info.plist */,
 				8223A5CF1BCD36250007C308 /* Supporting Files */,
 			);
@@ -138,6 +175,30 @@
 				8223A5F61BCD36260007C308 /* Info.plist */,
 			);
 			path = EnNeMonitorUITests;
+			sourceTree = "<group>";
+		};
+		82897CC21BD534F600F950B8 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				82897CBF1BD534E600F950B8 /* ENMNetworkStatisticsManager.h */,
+				82897CC01BD534E600F950B8 /* ENMNetworkStatisticsManager.m */,
+				82A9E8A81BCE86CE008CAF17 /* ENMHardwareManager.h */,
+				82A9E8A91BCE86CE008CAF17 /* ENMHardwareManager.m */,
+				820A02D31BCEA56300B89D19 /* ENMNetworkInfoManager.h */,
+				820A02D41BCEA56300B89D19 /* ENMNetworkInfoManager.m */,
+				8223A6051BCD38240007C308 /* ENMBatteryManager.h */,
+				8223A6061BCD38240007C308 /* ENMBatteryManager.m */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		82F098871BCFF72800352919 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				82F098841BCFF72000352919 /* Reachability.h */,
+				82F098851BCFF72000352919 /* Reachability.m */,
+			);
+			name = Reachability;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +268,7 @@
 				TargetAttributes = {
 					8223A5CB1BCD36250007C308 = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = PFBQU3BG9Y;
 					};
 					8223A5E41BCD36260007C308 = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -243,8 +305,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8223A5DF1BCD36250007C308 /* LaunchScreen.storyboard in Resources */,
+				82F0988F1BD006B000352919 /* EnNeMonitor.entitlements in Resources */,
 				8223A5DC1BCD36250007C308 /* Assets.xcassets in Resources */,
+				82C2E0751BDD2241000D27D2 /* Launch Screen.storyboard in Resources */,
 				8223A5DA1BCD36250007C308 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,9 +333,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8223A5D71BCD36250007C308 /* ViewController.m in Sources */,
+				82A9E8AA1BCE86CE008CAF17 /* ENMHardwareManager.m in Sources */,
+				829221601BCD3B11004D8DC8 /* ContentTableViewController.m in Sources */,
+				82F098861BCFF72000352919 /* Reachability.m in Sources */,
+				8223A6071BCD38240007C308 /* ENMBatteryManager.m in Sources */,
+				820A02D51BCEA56300B89D19 /* ENMNetworkInfoManager.m in Sources */,
 				8223A5D41BCD36250007C308 /* AppDelegate.m in Sources */,
+				8223A6041BCD36B30007C308 /* MainViewController.m in Sources */,
 				8223A5D11BCD36250007C308 /* main.m in Sources */,
+				82897CC11BD534E600F950B8 /* ENMNetworkStatisticsManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,14 +383,6 @@
 				8223A5D91BCD36250007C308 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		8223A5DD1BCD36250007C308 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8223A5DE1BCD36250007C308 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -410,8 +471,17 @@
 		8223A5FA1BCD36260007C308 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = /Users/Muffin/Documents/Xcode/EnNeMonitor/EnNeMonitor.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/PrivateFrameworks;
 				INFOPLIST_FILE = EnNeMonitor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.private.ios.EnNeMonitor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -421,8 +491,17 @@
 		8223A5FB1BCD36260007C308 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = /Users/Muffin/Documents/Xcode/EnNeMonitor/EnNeMonitor.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/PrivateFrameworks;
 				INFOPLIST_FILE = EnNeMonitor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.private.ios.EnNeMonitor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -496,6 +575,7 @@
 				8223A5FB1BCD36260007C308 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8223A5FC1BCD36260007C308 /* Build configuration list for PBXNativeTarget "EnNeMonitorTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +584,7 @@
 				8223A5FE1BCD36260007C308 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8223A5FF1BCD36260007C308 /* Build configuration list for PBXNativeTarget "EnNeMonitorUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +593,7 @@
 				8223A6011BCD36260007C308 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
