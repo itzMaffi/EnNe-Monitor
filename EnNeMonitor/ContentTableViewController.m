@@ -40,8 +40,6 @@
     [self initManagers];
     [self initTable];
     [self initFileHandle];
-    [self initFile];
-    
 }
 
 - (void)didReceiveMemoryWarning
@@ -55,7 +53,7 @@
 -(void)initManagers
 {
     batteryManager = [[ENMBatteryManager alloc] initWithPowerSource];
-    hardwareManager = [[ENMHardwareManager alloc] init];
+    hardwareManager = [[ENMHardwareManager alloc] initWithCPU];
     networkInfoManager = [[ENMNetworkInfoManager alloc] initWithReachability];
     networkStatisticsManager = [[ENMNetworkStatisticsManager alloc] initWithBuffers];
     
@@ -83,7 +81,10 @@
     
     //CPU and Memory
     
-    _cpuLabel.text = @"N/A";
+    _coreLabel1.text = @"N/A";
+    _coreLabel2.text = @"N/A";
+    _usageLabel1.text = @"N/A";
+    _usageLabel2.text = @"N/A";
     _memLabel.text = @"N/A";
     
     //Network Info
@@ -120,9 +121,9 @@
     fileHandle = [NSFileHandle fileHandleForUpdatingAtPath:logFilePath];
 }
 
--(void)initFile
+-(void)writeLogHeader
 {
-    NSString *header = @"Battery %, Battery Voltage (mV), Battery Amperage (mA), Battery Power Output (mW), Battery Temperature (°C), iPhone Model, iOS Version, CPU Load, Memory Usage, Connection Type, WiFi Signal Level (dBm), GSM Signal Level (dBm), Avg WiFi upSpeed, Avg WiFi downSpeed, Avg WWAN upSpeed, Avg WWAN downSpeed, Uplink Exch MB WiFi, Downlink Exch MB WiFi, Uplink Exch MB WWAN, Downlink Exch MB WWAN, Date \n";
+    NSString *header = @"Battery %, Battery Voltage (mV), Battery Amperage (mA), Battery Power Output (mW), Battery Temperature (°C), iPhone Model, iOS Version, CoreX, XUsage, CoreY, YUsage,  Memory Usage, Connection Type, WiFi Signal Level (dBm), GSM Signal Level (dBm), Avg WiFi upSpeed, Avg WiFi downSpeed, Avg WWAN upSpeed, Avg WWAN downSpeed, Uplink Exch MB WiFi, Downlink Exch MB WiFi, Uplink Exch MB WWAN, Downlink Exch MB WWAN, Date \n";
     
     [fileHandle seekToEndOfFile];
     [fileHandle writeData:[header dataUsingEncoding:NSUTF8StringEncoding]];
@@ -169,17 +170,25 @@
 
 -(NSString *)getHardwareData
 {
-    NSString *cpuLoad = [hardwareManager getCPULoad];
+    NSArray *cpuUsageArray = [hardwareManager getCPUUsageArray];
     NSString *memoryUsage = [hardwareManager getMemoryUsage];
     NSString *iPhoneModel = [hardwareManager getiPhoneModel];
     NSString *iOSVersion = [hardwareManager getiOSVersion];
     
-    _cpuLabel.text = cpuLoad;
+    unsigned int core1 = [[[cpuUsageArray objectAtIndex:0] valueForKey:@"Core"] unsignedIntegerValue];
+    unsigned int core2 = [[[cpuUsageArray objectAtIndex:1] valueForKey:@"Core"] unsignedIntegerValue];
+    float core1Usage = [[[cpuUsageArray objectAtIndex:0] valueForKey:@"Usage"] floatValue];
+    float core2Usage = [[[cpuUsageArray objectAtIndex:1] valueForKey:@"Usage"] floatValue];
+    
+    _coreLabel1.text = [NSString stringWithFormat:@"%u", core1];
+    _coreLabel2.text = [NSString stringWithFormat:@"%u", core2];
+    _usageLabel1.text = [NSString stringWithFormat:@"%.2f %%", core1Usage];
+    _usageLabel2.text = [NSString stringWithFormat:@"%.2f %%", core2Usage];
     _memLabel.text = memoryUsage;
     _ipModel.text = iPhoneModel;
     _iosLabel.text = iOSVersion;
     
-    NSString *hardwareData = [NSString stringWithFormat:@"%@, %@, %@, %@",iPhoneModel, iOSVersion, cpuLoad, memoryUsage];
+    NSString *hardwareData = [NSString stringWithFormat:@"%@, %@, %u, %.2f %%, %u, %.2f %%, %@",iPhoneModel, iOSVersion, core1, core1Usage, core2, core2Usage, memoryUsage];
     
     return hardwareData;
     
@@ -252,6 +261,8 @@
         [[NSFileManager defaultManager] createFileAtPath:logFilePath contents:nil attributes:nil];
         fileHandle = [NSFileHandle fileHandleForUpdatingAtPath:logFilePath];
     }
+    
+    [self writeLogHeader];
     
     [networkStatisticsManager startWriting];
     

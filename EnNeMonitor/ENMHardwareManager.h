@@ -10,8 +10,9 @@
 
 @interface ENMHardwareManager : NSObject
 
+-(id)initWithCPU;
 -(NSString *)getMemoryUsage;
--(NSString *)getCPULoad;
+-(NSMutableArray *)getCPUUsageArray;
 -(NSString *)getiPhoneModel;
 -(NSString *)getiOSVersion;
 

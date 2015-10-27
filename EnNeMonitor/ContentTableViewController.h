@@ -17,7 +17,6 @@
 @property (strong, nonatomic) IBOutlet UILabel *ampLabel;
 @property (strong, nonatomic) IBOutlet UILabel *wattLabel;
 @property (strong, nonatomic) IBOutlet UILabel *tempLabel;
-@property (strong, nonatomic) IBOutlet UILabel *cpuLabel;
 @property (strong, nonatomic) IBOutlet UILabel *memLabel;
 @property (strong, nonatomic) IBOutlet UILabel *connLabel;
 @property (strong, nonatomic) IBOutlet UILabel *wifiLabel;
@@ -30,6 +29,10 @@
 @property (strong, nonatomic) IBOutlet UILabel *downExWiFi;
 @property (strong, nonatomic) IBOutlet UILabel *upExWWAN;
 @property (strong, nonatomic) IBOutlet UILabel *downExWWAN;
+@property (strong, nonatomic) IBOutlet UILabel *coreLabel1;
+@property (strong, nonatomic) IBOutlet UILabel *coreLabel2;
+@property (strong, nonatomic) IBOutlet UILabel *usageLabel1;
+@property (strong, nonatomic) IBOutlet UILabel *usageLabel2;
 
 @property (nonatomic) float samplingRate;
 
