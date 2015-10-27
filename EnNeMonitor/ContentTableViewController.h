@@ -10,6 +10,7 @@
 
 @interface ContentTableViewController : UITableViewController
 
+@property (strong, nonatomic) IBOutlet UILabel *iosLabel;
 @property (strong, nonatomic) IBOutlet UILabel *ipModel;
 @property (strong, nonatomic) IBOutlet UILabel *percentLabel;
 @property (strong, nonatomic) IBOutlet UILabel *volLabel;

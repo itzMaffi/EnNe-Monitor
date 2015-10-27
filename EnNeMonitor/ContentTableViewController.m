@@ -71,6 +71,7 @@
     //model
     
     _ipModel.text = @"N/A";
+    _iosLabel.text = @"N/A";
     
     //battery
     
@@ -121,7 +122,7 @@
 
 -(void)initFile
 {
-    NSString *header = @"Battery %, Battery Voltage (mV), Battery Amperage (mA), Battery Power Output (mW), Battery Temperature (°C), iPhone Model, CPU Load, Memory Usage, Connection Type, WiFi Signal Level (dBm), GSM Signal Level (dBm), Avg WiFi upSpeed, Avg WiFi downSpeed, Avg WWAN upSpeed, Avg WWAN downSpeed, Uplink Exch MB WiFi, Downlink Exch MB WiFi, Uplink Exch MB WWAN, Downlink Exch MB WWAN, Date";
+    NSString *header = @"Battery %, Battery Voltage (mV), Battery Amperage (mA), Battery Power Output (mW), Battery Temperature (°C), iPhone Model, iOS Version, CPU Load, Memory Usage, Connection Type, WiFi Signal Level (dBm), GSM Signal Level (dBm), Avg WiFi upSpeed, Avg WiFi downSpeed, Avg WWAN upSpeed, Avg WWAN downSpeed, Uplink Exch MB WiFi, Downlink Exch MB WiFi, Uplink Exch MB WWAN, Downlink Exch MB WWAN, Date \n";
     
     [fileHandle seekToEndOfFile];
     [fileHandle writeData:[header dataUsingEncoding:NSUTF8StringEncoding]];
@@ -171,12 +172,14 @@
     NSString *cpuLoad = [hardwareManager getCPULoad];
     NSString *memoryUsage = [hardwareManager getMemoryUsage];
     NSString *iPhoneModel = [hardwareManager getiPhoneModel];
+    NSString *iOSVersion = [hardwareManager getiOSVersion];
     
     _cpuLabel.text = cpuLoad;
     _memLabel.text = memoryUsage;
     _ipModel.text = iPhoneModel;
+    _iosLabel.text = iOSVersion;
     
-    NSString *hardwareData = [NSString stringWithFormat:@"%@, %@, %@",iPhoneModel, cpuLoad, memoryUsage];
+    NSString *hardwareData = [NSString stringWithFormat:@"%@, %@, %@, %@",iPhoneModel, iOSVersion, cpuLoad, memoryUsage];
     
     return hardwareData;
     

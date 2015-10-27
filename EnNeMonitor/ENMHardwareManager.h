@@ -13,5 +13,6 @@
 -(NSString *)getMemoryUsage;
 -(NSString *)getCPULoad;
 -(NSString *)getiPhoneModel;
+-(NSString *)getiOSVersion;
 
 @end
